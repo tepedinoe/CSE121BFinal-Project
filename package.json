@@ -1,7 +1,7 @@
 {
-  "name": "Prove12",
+  "name": "Prove13",
   "version": "1.0.0",
-  "description": "12 Prove: Assignment",
+  "description": "13 Prove: Assignment",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
