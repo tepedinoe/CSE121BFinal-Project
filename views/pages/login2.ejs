@@ -1,0 +1,24 @@
+<% include ../includes/header.ejs %>
+
+</head>
+<body style="background: cornflowerblue;">
+    <div>
+        <h2 style="text-align: center;">Prove 12 - Live Chat</h2>
+    </div>
+    <div class="container">
+        <h1 style="text-align: center;">Choose a Nickname to Join the Chat</h1>
+        <br>
+        <div class="form" style="text-align: center;">
+            <label for="username">Nickname</label><br>
+            <input type="text" name="username" id="username"> <br> <br>
+            <button onclick="login()">Enter chat</button>
+        </div>
+        <div class="container" id="errMsg">
+ 
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/pr12.js"></script>

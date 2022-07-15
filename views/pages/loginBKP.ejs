@@ -1,0 +1,109 @@
+<% include ../includes/header.ejs %>
+<script src="/socket.io/socket.io.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(102, 50, 159)
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+</style>
+</head>
+<body style="background-color: rgb(163, 163, 220);">
+
+
+<br>
+<div style="text-align: center;"> 
+<img src="https://cdn.glitch.global/e63a51d7-1955-47b8-8204-f44edd4090b1/chat.png?v=1647566796600" alt="Virtual Tallow Logo image"  height="120"/> 
+</div>
+<br>
+
+
+<ul>
+  <li class="main-header__item"> <img src="https://cdn.glitch.global/e63a51d7-1955-47b8-8204-f44edd4090b1/menuPic.jpg?v=1646424893670" alt="Virtual Tallow Logo image" width="130"> </li>
+      <li class="main-header__item"> <a class="" href="https://marvelous-onyx-license.glitch.me">Home</a>  </li>
+      <li class="main-header__item"> <a class="" href="https://prove6.herokuapp.com/">Shop</a> </li>   
+      <li class="main-header__item"> <a class="" href="https://chat-virtualtallow.herokuapp.com/">Chat</a>  </li>
+      <li class="main-header__item">   <a class="" href="https://marvelous-onyx-license.glitch.me/Contact.html">Contact Us</a> </li>
+      <li class="main-header__item"> <a class="" href="https://marvelous-onyx-license.glitch.me/site-plan.html">Site Plan</a> </li>
+      <li class="main-header__item"> <a class="" href="https://marvelous-onyx-license.glitch.me/resources.html">Resources</a> </li> 
+      <li class="main-header__item"> <a class="" href="https://marvelous-onyx-license.glitch.me/AboutMe.html">About me</a>  </li>    
+</ul>
+<br>
+<br>
+<div style="text-align: center;"> 
+<img src="https://cdn.glitch.global/e63a51d7-1955-47b8-8204-f44edd4090b1/PurpleLibrary.png?v=1647906492844" alt="Pink"  height="120"/> 
+</div>
+<br>
+
+
+    <div class="container">
+        <h2 style="text-align: center;">Choose a Nickname to Join the Chat</h2>
+        <br>
+        <div class="form" style="text-align: center;">
+            <label for="username">Nickname</label><br>
+            <input type="text" name="username" id="username"> <br> <br>
+            <button onclick="login()">Enter chat</button>
+        </div>
+        <br> <br> <br>
+        <div class="container" id="errMsg" style="text-align: center;color: red;">
+        </div>
+    </div>
+        
+        
+        
+          <br> <br>
+          <div style="font-family: 'Times New Roman', Times, serif;text-align: center;">
+          <hr>
+          <a href="https://www.facebook.com/eds.tp.9/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/facebook.png?v=1643427641256" alt="Facebook" style="width:80px;">
+          </a>
+          <a href="https://www.instagram.com/tepedinoe/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/2048px-Instagram_icon.png?v=1643427448027" alt="Instagran" style="width:42px;">
+            &nbsp;
+          </a>
+          <a href="https://twitter.com/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/twitter.png?v=1643427462371" alt="Twitter" style="width:42px;height:42px;">
+          </a>
+          <a href="https://www.whatsapp.com/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/whatslogo.png?v=1643427467218" alt="WhatsApp" style="width:52px;">
+          </a>
+          <hr> 
+      </div>
+      <br>
+   
+
+        
+
+        <div>
+        <h3 style="font-family: 'Times New Roman', Times, serif;text-align: center;">&copy; 2022 Virtual Tallow Company</h3>
+             <footer>
+               <p style="color: rgb(119,119,144);text-align: center;">Author: Edson MR Tepedino
+                 <br><a href="mailto:tepedinoe@gmail.com">tepedinoe@gmail.com</a></p>
+             </footer>
+      </div>
+
+
+
+<script src="/js/prove12.js"></script>
+</body>
+
+</html>

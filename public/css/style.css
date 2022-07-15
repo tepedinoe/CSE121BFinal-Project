@@ -1,0 +1,59 @@
+.container {
+    height: 60vh;
+    overflow-y: auto;
+    width: 50%;
+   
+}
+
+.container ul {
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+ul.chat li.message {
+    border: solid #eceaa2 0.5rem;
+    border-radius: 2rem;
+    background-color: #eceaa2;
+    margin: 2rem 0 1rem 0;
+    width: max-content;
+    font-size: 2 rem;
+    padding: 1rem;
+}
+
+ul.chat li.uMessage {
+    border: solid #008000 0.5rem;
+    margin-left: auto;
+    background-color: #008000;
+    color: #F8F8FF;
+   
+}
+
+ul.chat li.message button {
+    margin-left:22px;
+}
+
+.input {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+
+.input button {
+    vertical-align: top;
+    padding: 1.25rem;
+    font-weight: bold;
+}
+
+.input textarea {
+    border: solid #17306a 0.5rem;
+    width: 100%;
+}
+
+.displayname {
+    font-size: 1.5em;
+}
+

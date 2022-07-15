@@ -1,0 +1,67 @@
+<% include ../includes/header.ejs %>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background: rgb(102, 50, 159);text-align: center;">
+<div style="text-align: center;"> 
+<img src="https://cdn.glitch.global/e63a51d7-1955-47b8-8204-f44edd4090b1/chat.png?v=1647566796600" alt="Virtual Tallow Logo image"  height="100"/> 
+</div>
+    <div>
+        <h3 style="text-align: center;color: white;">CSE 121B Final Project Live Chat</h3>
+    </div>
+    <div class="container" id="container" style="border: 1px;background-color: rgb(163, 163, 220);">        
+        <ul id="chatBox" class="chat">
+        </ul>
+    </div>
+    <% if (user) { %>
+    <div class="input">
+        <p class="displayname" style="color: white;"><%= user %></p>
+        <div>
+            <textarea name="message" id="message" style="background: rgb(163, 163, 220);"></textarea>
+            <br>
+            <button onclick="postMessage()" style="width: 150px;height: 40px;">Send</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="window.location.href='/leaveChat'" style="width: 150px;height: 40px;">Leave Chat</button>            
+        </div>
+        <input type="hidden" value="<%= user %>" name="user" id="user">
+    </div>
+    <% } else { %>
+    <p>No login, view only.</p>
+    <% } %>
+
+        
+        
+        
+          <br> <br>
+          <div style="font-family: 'Times New Roman', Times, serif;text-align: center;">
+          <hr>
+          <a href="https://www.facebook.com/eds.tp.9/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/facebook.png?v=1643427641256" alt="Facebook" style="width:80px;">
+          </a>
+          <a href="https://www.instagram.com/tepedinoe/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/2048px-Instagram_icon.png?v=1643427448027" alt="Instagran" style="width:42px;">
+            &nbsp;
+          </a>
+          <a href="https://twitter.com/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/twitter.png?v=1643427462371" alt="Twitter" style="width:42px;height:42px;">
+          </a>
+          <a href="https://www.whatsapp.com/" style="text-decoration-line: none;">
+            <img src="https://cdn.glitch.global/c98414d2-545f-4243-900f-0da331b8e2fe/whatslogo.png?v=1643427467218" alt="WhatsApp" style="width:52px;">
+          </a>
+          <hr> 
+      </div>
+      <br>
+   
+
+        
+ 
+        <div>
+        <h3 style="font-family: 'Times New Roman', Times, serif;text-align: center;">&copy; 2022 Virtual Tallow Company</h3>
+             <footer>
+               <p style="color: rgb(119,119,144);text-align: center;">Author: Edson MR Tepedino
+                 <br><a href="mailto:tepedinoe@gmail.com">tepedinoe@gmail.com</a></p>
+             </footer>
+      </div>
+
+</body>
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/prove12-chat.js"></script>
